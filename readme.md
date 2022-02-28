@@ -23,7 +23,13 @@ docker exec -it www_docker_php8_mariage_test /bin/bash
 npm run dev
 ```
 
+### Lancer les test (dns le container)
+```bash
 
+php ./vendor/bin/phpunit --verbose
+```
+
+# En plus 
 # Responce
 
 * 200 ok
@@ -34,3 +40,8 @@ npm run dev
 * 500 Error: Internal Server Error
 
 champ null ne pas le mettre dans le json
+
+Soit pull request pour les devoirs
+Soit on push les features au lead
+Les des push leurs features sur le dépôt pas de CI
+Les Lead merge les features dans la branche DEV et push sur le dépôt => CI pour valider l’ensemble les tests sont verts => On peut récupérer le code et continuer pour chaque équipe
