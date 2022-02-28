@@ -4,6 +4,7 @@ namespace App\Tests\Func;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class ThemeFuncTest extends WebTestCase
 {
@@ -14,5 +15,9 @@ class ThemeFuncTest extends WebTestCase
 
         // dd($client->getResponse());
         $this->assertEquals('true', 'true');
+        $response = $client->getResponse();
+        $responseContent = $response->getContent();
+        $responseDecode = json_decode($responseContent);
+        self::assertEquals(Response::HTTP_OK, $response->getStatusCode());
     }
 }
