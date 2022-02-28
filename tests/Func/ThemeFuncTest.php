@@ -13,12 +13,10 @@ class ThemeFuncTest extends WebTestCase
         $client = self::createClient();
         $client->request(Request::METHOD_GET, '/api/themes');
 
-        // dd($client->getResponse());
         $this->assertEquals('true', 'true');
         $response = $client->getResponse();
         $responseContent = $response->getContent();
         $responseDecode = json_decode($responseContent);
-        echo ("return : " . $response->getStatusCode() );
         self::assertEquals(Response::HTTP_OK, $response->getStatusCode());
     }
 }
