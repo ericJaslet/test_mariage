@@ -18,6 +18,7 @@ class ThemeFuncTest extends WebTestCase
         $response = $client->getResponse();
         $responseContent = $response->getContent();
         $responseDecode = json_decode($responseContent);
+        echo ("return : " . $response->getStatusCode() );
         self::assertEquals(Response::HTTP_OK, $response->getStatusCode());
     }
 }
