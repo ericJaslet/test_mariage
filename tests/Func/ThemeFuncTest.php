@@ -11,7 +11,7 @@ class ThemeFuncTest extends WebTestCase
     public function testGetThemes(): void
     {
         $client = self::createClient();
-        $client->request(Request::METHOD_GET, '/api/images');
+        $client->request(Request::METHOD_GET, '/api/themes');
 
         // dd($client->getResponse());
         $this->assertEquals('true', 'true');
