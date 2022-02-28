@@ -22,3 +22,15 @@ docker-compose up -d
 docker exec -it www_docker_php8_mariage_test /bin/bash
 npm run dev
 ```
+
+
+# Responce
+
+* 200 ok
+* 201 created (Post : créer)
+* 400 invalid input / bad request
+* 404 resource not found
+* 422 Unprocessable entity
+* 500 Error: Internal Server Error
+
+champ null ne pas le mettre dans le json
