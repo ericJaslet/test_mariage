@@ -1,0 +1,5 @@
+App\Entity\Image:
+    image_{1..2}:
+        name: <sentence(4)>
+        link: 'https://www.ericjaslet.fr/images/portrait_400x411_80.jpg'
+        alt: 'alt'

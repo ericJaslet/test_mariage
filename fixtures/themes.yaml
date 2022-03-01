@@ -1,0 +1,8 @@
+App\Entity\Theme:
+    theme_{1..10}:
+        title: <sentence(2)>
+        content: <text()>
+        price: 1000
+        nbPerson: 100
+        menu: <text()>
+        musics: ['musics']
