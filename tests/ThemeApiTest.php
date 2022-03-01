@@ -49,7 +49,7 @@ class ThemeApiTest extends ApiTestCase
                 "string"
             ],
             "images"    => [
-                "/api/images/3"
+                "/api/images/11"
             ]
         ]]);
 

@@ -21,7 +21,11 @@ yarn-error.log
 /phpunit.xml
 ###< symfony/phpunit-bridge ###
 
+###> symfony/alice-bundle ###
+/data/
+
 ###> phpunit/phpunit ###
 /phpunit.xml
 .phpunit.result.cache
+/tests.sh
 ###< phpunit/phpunit ###

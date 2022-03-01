@@ -6,3 +6,4 @@ App\Entity\Theme:
         nbPerson: 100
         menu: <text()>
         musics: ['musics']
+        images: ['@image_10']
