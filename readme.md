@@ -62,3 +62,4 @@ php ./vendor/bin/phpunit --verbose
 symfony.yaml de github
 
 php bin/console doctrine:fixtures:load --no-interaction --env=test
+
